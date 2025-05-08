@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madrasah Kaderisasi PAGARNUSA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #083115;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      background-color: #083115;
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .daftar-button {
+      background-color: #98c11e;
+      color: #083115;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .daftar-button:hover {
+      background-color: #79a70f;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      background-color: #083115;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .daftar-button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+
+      .logo {
+        max-width: 100px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="logopn.png" alt="Logo PAGARNUSA" class="logo">
+    <h1>Madrasah Kaderisasi PAGARNUSA<br>Universitas Nahdlatul Ulama Indonesia</h1>
+  </header>
+
+  <div class="container">
+    <p>Silakan klik tombol di bawah untuk mendaftar:</p>
+    <a href="https://forms.gle/vFpj6L8x9L372zcu6" class="daftar-button">Daftar</a>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 PAGARNUSA UNUSIA. All rights reserved.
+  </footer>
+</body>
+</html>
