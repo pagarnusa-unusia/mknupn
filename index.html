@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madrasah Kaderisasi PAGARNUSA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madrasah Kaderisasi Nahdlatul Ulama</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #083115;
       color: #ffffff;
       display: flex;
@@ -23,21 +23,31 @@
 
     .header {
       background-color: #083115;
-      text-align: center;
-      padding: 30px 20px 10px;
+      padding: 40px 20px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: left;
     }
 
     .logo {
-      max-width: 120px;
+      max-width: 100px;
       height: auto;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       font-weight: 700;
-      margin: 0;
+      line-height: 1.4;
       color: #ffffff;
+      margin-bottom: 0px;
     }
 
     .container {
@@ -46,20 +56,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      color: #ffffff;
+      font-size: 1.3em;
+      margin-bottom: 25px;
+      color: #f0f0f0;
     }
 
     .daftar-button {
       background-color: #98c11e;
       color: #083115;
-      padding: 15px 30px;
+      padding: 15px 35px;
       border: none;
       border-radius: 30px;
       font-size: 1.2em;
@@ -67,14 +77,14 @@
       cursor: pointer;
       text-decoration: none;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      transition: all 0.3s ease;
       animation: pulse 2s infinite;
     }
 
     .daftar-button:hover {
       background-color: #79a70f;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-      transform: translateY(-2px);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+      transform: translateY(-3px);
     }
 
     @keyframes pulse {
@@ -83,47 +93,83 @@
       100% { transform: scale(1); }
     }
 
+    .alert-text {
+      margin-top: 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #ffcc00;
+      text-transform: uppercase;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
     .footer {
-      background-color: #083115;
-      color: #ffffff;
+      background-color: #06280f;
+      color: #cccccc;
       text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      border-top: 1px solid #ffffff;
+      padding: 20px 10px;
+      font-size: 0.95em;
+      border-top: 1px solid rgba(255,255,255,0.2);
     }
 
     @media (max-width: 768px) {
+      .brand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
       h1 {
         font-size: 1.5em;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 90px;
       }
 
       .daftar-button {
         font-size: 1em;
-        padding: 12px 24px;
+        padding: 12px 25px;
       }
 
-      .logo {
-        max-width: 100px;
+      p {
+        font-size: 1.1em;
+      }
+
+      .alert-text {
+        font-size: 1em;
       }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
       h1 {
-        font-size: 1.8em;
+        font-size: 1.9em;
+      }
+
+      .container {
+        padding: 50px 30px;
       }
     }
   </style>
 </head>
 <body>
   <header class="header">
-    <img src="logopn.png" alt="Logo PAGARNUSA" class="logo">
-    <h1>Madrasah Kaderisasi PAGARNUSA<br>Universitas Nahdlatul Ulama Indonesia</h1>
+    <div class="brand">
+      <img src="logopn.png" alt="Logo PAGARNUSA" class="logo">
+      <h1>MKNUPN<br>UNUSIA</h1>
+    </div>
   </header>
 
-  <div class="container">
-    <p>Silakan klik tombol di bawah untuk mendaftar:</p>
-    <a href="https://forms.gle/vFpj6L8x9L372zcu6" class="daftar-button">Daftar</a>
-  </div>
+  <main class="container">
+    <p>Daftar Sekarang juga:</p>
+    <a href="https://forms.gle/MgVStwQP9Tjvgst37" class="daftar-button">Daftar</a>
+    <div class="alert-text">Pendaftaran DIBUKA HINGGA 30 MEI 2025!</div>
+  </main>
 
   <footer class="footer">
     &copy; 2025 PAGARNUSA UNUSIA. All rights reserved.
